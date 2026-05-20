@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  /* Brochure light-blue theme */
+  --sky-bg:      #dceef8;   /* page background - light blue like brochure */
+  --sky-mid:     #c4e2f4;   /* slightly deeper for alternating sections */
+  --sky-light:   #eaf5fb;   /* very light for cards */
+  --white:       #ffffff;
+  --navy:        #1a3a6b;   /* deep navy for headings & hero */
+  --navy-dark:   #0f2550;
+  --cyan:        #1490c8;   /* brochure cyan-blue accent */
+  --cyan-light:  #3aaedd;
+  --cyan-dark:   #0f72a3;
+  --gold:        #d4920a;
+  --gold-light:  #f0c84a;
+  --text:        #1a3a6b;
+  --text-body:   #2c4a70;
+  --text-muted:  #4a6585;
+  --border:      rgba(20,144,200,0.18);
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background: var(--sky-bg);
+  color: var(--text-body);
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin-bottom: 0.75rem;
+}
+.section-tag::before {
+  content: '';
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--cyan);
+  flex-shrink: 0;
+}
+
+/* Floating bob animation for hero decoration */
+@keyframes bob {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-14px); }
+}
+.bob { animation: bob 4s ease-in-out infinite; }
+
+/* Slow spin for decorative rings */
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.spin-slow { animation: spinSlow 18s linear infinite; }
+
+/* Pulse ring */
+@keyframes pulseRing {
+  0%   { transform: scale(1);   opacity: 0.4; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+.pulse-ring { animation: pulseRing 2.5s ease-out infinite; }
+
+/* Ticker counter */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
