@@ -69,10 +69,12 @@ export default function RegisterPage() {
                   </div>
                 ))}
               </div>
-
               <div style={{ marginTop:"1.25rem", background:"#fff8e1", border:"1px solid #f0c84a", borderRadius:8, padding:"0.85rem 1rem", fontSize:"0.82rem", color:"#7a5a00" }}>
                 📌 Registration includes: Conference kit, Breakfast, Lunch & Participation Certificate.<br />
                 <strong>Accommodation is not included.</strong>
+              </div>
+              <div style={{ marginTop:"0.75rem", background:"#eaf5fb", border:"1px solid rgba(20,144,200,0.25)", borderRadius:8, padding:"0.85rem 1rem", fontSize:"0.83rem", color:"#2c4a70", lineHeight:1.65 }}>
+                📝 &nbsp; <strong>Note:</strong> Abstract submission opens after registration. Once registered, you may submit your abstract at <a href="mailto:iamhcon2026@gmail.com" style={{ color:"#1490c8" }}>iamhcon2026@gmail.com</a> before 20 June 2026.
               </div>
             </ScrollReveal>
 
