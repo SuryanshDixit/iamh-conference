@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import FloatingWorkshopButton from "@/components/FloatingWorkshopButton";
 
 export const metadata: Metadata = {
   title: "IAMH–BHU National Conference 2026 | Mental Health Care",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <Navbar />
+        <FloatingWorkshopButton />
         <main>{children}</main>
       </body>
     </html>
