@@ -5,7 +5,7 @@ import AnimatedCounter from "@/components/AnimatedCounter";
 import Typewriter from "@/components/Typewriter";
 import LottiePlayer from "@/components/LottiePlayer";
 import Image from "next/image";
-import { feSpotLight } from "framer-motion/client";
+import { col, feSpotLight } from "framer-motion/client";
 
 
 export default function HomePage() {
@@ -64,7 +64,7 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-
+          <div style = {{display:"flex", flexDirection:"column", justifyContent:"left", alignItems:"center"}}>
           <div style={{ display:"flex", gap:"1rem", flexWrap:"wrap" }}>
             <Link href="/register" style={{
               background:"#fff", color:"#1a3a6b",
@@ -78,6 +78,34 @@ export default function HomePage() {
               textDecoration:"none", fontSize:"0.88rem", fontWeight:500,
             }}>Submit Abstract</Link>
           </div>
+          <div style={{ textAlign:"center", marginTop:"1.5rem" }}>
+            <a
+            href="/BHU-IAMH Conference July 2026 .pdf"
+            download="BHU-IAMH Conference July 2026 .pdf"
+            style={{
+              display:"inline-flex",
+              alignItems:"center",
+              gap:"0.6rem",
+              background:"#1a3a6b",
+              color:"#fff",
+              padding:"0.9rem 2rem",
+              borderRadius:8,
+              textDecoration:"none",
+              fontSize:"0.92rem",
+              fontWeight:700,
+              letterSpacing:"0.03em",
+              boxShadow:"0 4px 16px rgba(26,58,107,0.2)",
+            }}
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download Conference Brochure
+          </a>
+        </div>
+        </div>
         </div>
 
         {/* RIGHT — floating schedule card */}
