@@ -10,6 +10,7 @@ const links = [
   { href: "/papers", label: "Submit Paper" },
   { href: "/committee", label: "Committee" },
   { href: "/venue", label: "Venue" },
+  { href: "/workshop", label: "Workshop" },
 ];
 
 export default function Navbar() {
