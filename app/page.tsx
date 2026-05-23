@@ -64,7 +64,7 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-          <div style = {{display:"flex", flexDirection:"column", justifyContent:"left", alignItems:"center"}}>
+          <div style={{ display:"flex", flexDirection:"column", alignItems:"flex-start" }}>
           <div style={{ display:"flex", gap:"1rem", flexWrap:"wrap" }}>
             <Link href="/register" style={{
               background:"#fff", color:"#1a3a6b",
