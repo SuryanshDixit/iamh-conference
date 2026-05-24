@@ -4,7 +4,8 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const patrons = [
   { initials:"SN", role:"Patron",     name:"Prof. S.N. Sankhwar", affil:"Director, IMS, BHU, Varanasi" },
-  { initials:"SG", role:"Co-Patron",  name:"Prof. Sanjay Gupta",  affil:"Dean, IMS, BHU, Varanasi" },
+  { initials:"SG", role:"Co-Patron",  name:"Dr.(Prof) Pradip Kumar Goswami",  affil:"Dean, of Faculty of Ayurveda, IMS, BHU,
+Varanasi" },
 ];
 const members = [
   { role:"Organising Chairman",        name:"Dr. (Prof) K.N. Murthy",            affil:"Former HOD, Kayachikitsa, IMS-BHU" },
