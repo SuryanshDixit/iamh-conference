@@ -52,16 +52,85 @@ export default function HomePage() {
             Bridging Mind, Science, and Technology for Holistic Well-being
           </p>
 
-          <div style={{ display:"flex", flexDirection:"column", gap:"0.7rem", marginBottom:"2.5rem" }}>
-            {[
-              { icon:"🗓", bold:"10–12 July 2026", rest:" · Workshop + Conference" },
-              { icon:"📍", bold:"K.N. Udupa Auditorium, IMS-BHU", rest:", Varanasi" },
-              { icon:"📄", bold:"Abstract deadline:", rest:" 20 June 2026" },
-            ].map((m,i) => (
-              <div key={i} style={{ display:"flex", alignItems:"center", gap:"0.75rem", color:"rgba(255,255,255,0.82)", fontSize:"0.9rem" }}>
-                <div style={{ width:30, height:30, borderRadius:"50%", background:"rgba(255,255,255,0.12)", display:"flex", alignItems:"center", justifyContent:"center", fontSize:"0.8rem", flexShrink:0 }}>{m.icon}</div>
-                <span><strong style={{ color:"#fff" }}>{m.bold}</strong>{m.rest}</span>
-              </div>
+          <div
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    gap: "0.7rem",
+    marginBottom: "2.5rem",
+  }}
+>
+  {[
+    {
+      icon: "🗓",
+      bold: "10–12 July 2026",
+      rest: " · Workshop + Conference",
+    },
+    {
+      icon: "📍",
+      bold: "K.N. Udupa Auditorium, IMS-BHU",
+      rest: ", Varanasi",
+    },
+    {
+      icon: "📄",
+      bold: "Abstract deadline:",
+      rest: (
+        <>
+          {" "}
+          <span
+            style={{
+              textDecoration: "line-through",
+              color: "rgba(255,255,255,0.55)",
+              marginRight: "8px",
+            }}
+          >
+            20 June 2026
+          </span>
+          <span
+            style={{
+              color: "#4ADE80",
+              fontWeight: "700",
+            }}
+          >
+            Extended till 25 June 2026
+          </span>
+        </>
+      ),
+    },
+  ].map((m, i) => (
+    <div
+      key={i}
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: "0.75rem",
+        color: "rgba(255,255,255,0.82)",
+        fontSize: "0.9rem",
+      }}
+    >
+      <div
+        style={{
+          width: 30,
+          height: 30,
+          borderRadius: "50%",
+          background: "rgba(255,255,255,0.12)",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontSize: "0.8rem",
+          flexShrink: 0,
+        }}
+      >
+        {m.icon}
+      </div>
+
+      <span>
+        <strong style={{ color: "#fff" }}>{m.bold}</strong>
+        {m.rest}
+      </span>
+    </div>
+  ))}
+</div>
             ))}
           </div>
           <div style={{ display:"flex", flexDirection:"column", alignItems:"flex-start" }}>
