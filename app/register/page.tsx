@@ -139,20 +139,98 @@ export default function RegisterPage() {
 
               {/* Important dates */}
               <ScrollReveal direction="right" delay={0.2}>
-                <div style={{ background:"#c4e2f4", border:"1px solid rgba(20,144,200,0.2)", borderRadius:14, padding:"1.75rem" }}>
-                  <h4 style={{ fontFamily:"Georgia,serif", fontSize:"1.2rem", fontWeight:600, color:"#1a3a6b", marginBottom:"1rem" }}>Important Dates</h4>
-                  {[
-                    { date:"1 June 2026",     label:"Early bird registration deadline" },
-                    { date:"20 June 2026",    label:"Abstract submission deadline" },
-                    { date:"10 July 2026",    label:"Pre-conference workshop" },
-                    { date:"11–12 July 2026", label:"Main conference" },
-                  ].map((d,i,arr) => (
-                    <div key={d.date} style={{ display:"flex", justifyContent:"space-between", padding:"0.6rem 0", borderBottom: i<arr.length-1?"1px solid rgba(20,144,200,0.15)":"none", fontSize:"0.85rem", flexWrap:"wrap", gap:"0.25rem" }}>
-                      <span style={{ fontWeight:700, color:"#1490c8" }}>{d.date}</span>
-                      <span style={{ color:"#4a6585" }}>{d.label}</span>
-                    </div>
-                  ))}
-                </div>
+                <div
+  style={{
+    background: "#c4e2f4",
+    border: "1px solid rgba(20,144,200,0.2)",
+    borderRadius: 14,
+    padding: "1.75rem",
+  }}
+>
+  <h4
+    style={{
+      fontFamily: "Georgia,serif",
+      fontSize: "1.2rem",
+      fontWeight: 600,
+      color: "#1a3a6b",
+      marginBottom: "1rem",
+    }}
+  >
+    Important Dates
+  </h4>
+
+  {[
+    {
+      date: "1 June 2026",
+      label: "Early bird registration deadline",
+    },
+    {
+      date: (
+        <>
+          <span
+            style={{
+              textDecoration: "line-through",
+              color: "#7d8793",
+              marginRight: "8px",
+            }}
+          >
+            20 June 2026
+          </span>
+          <span
+            style={{
+              color: "#15803d",
+              fontWeight: 700,
+            }}
+          >
+            25 June 2026
+          </span>
+        </>
+      ),
+      label: "Abstract submission deadline",
+    },
+    {
+      date: "10 July 2026",
+      label: "Pre-conference workshop",
+    },
+    {
+      date: "11–12 July 2026",
+      label: "Main conference",
+    },
+  ].map((d, i, arr) => (
+    <div
+      key={i}
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        padding: "0.6rem 0",
+        borderBottom:
+          i < arr.length - 1
+            ? "1px solid rgba(20,144,200,0.15)"
+            : "none",
+        fontSize: "0.85rem",
+        flexWrap: "wrap",
+        gap: "0.25rem",
+      }}
+    >
+      <span
+        style={{
+          fontWeight: 700,
+          color: "#1490c8",
+        }}
+      >
+        {d.date}
+      </span>
+
+      <span
+        style={{
+          color: "#4a6585",
+        }}
+      >
+        {d.label}
+      </span>
+    </div>
+  ))}
+</div>
               </ScrollReveal>
 
             </div>
