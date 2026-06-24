@@ -131,8 +131,7 @@ export default function HomePage() {
     </div>
   ))}
 </div>
-            ))}
-          </div>
+            
           <div style={{ display:"flex", flexDirection:"column", alignItems:"flex-start" }}>
           <div style={{ display:"flex", gap:"1rem", flexWrap:"wrap" }}>
             <Link href="/register" style={{
