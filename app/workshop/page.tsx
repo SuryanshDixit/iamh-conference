@@ -75,7 +75,7 @@ export default function WorkshopPage() {
               { icon:"📅", label:"Date", value:"Friday, 10 July 2026" },
               { icon:"📍", label:"Venue", value:"K.N. Udupa Auditorium, IMS-BHU, Varanasi" },
               { icon:"🎓", label:"Registration Fee — Students", value:"₹500" },
-              { icon:"👔", label:"Registration Fee — Professionals", value:"₹1,000" },
+              { icon:"👔", label:"Registration Fee — Professionals", value:"₹500" },
             ].map((item) => (
               <ScrollReveal key={item.label} direction="up">
                 <div style={{ background:"#fff", border:"1px solid rgba(20,144,200,0.18)", borderRadius:12, padding:"1.5rem", display:"flex", alignItems:"flex-start", gap:"1rem" }}>
