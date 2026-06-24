@@ -22,35 +22,97 @@ export default function RegisterPage() {
               <h2 style={{ fontFamily:"Georgia,serif", fontSize:"2rem", fontWeight:600, color:"#1a3a6b", marginBottom:"1.5rem" }}>Registration Fees</h2>
 
               <div style={{ overflowX:"auto", borderRadius:12, boxShadow:"0 2px 18px rgba(20,144,200,0.08)" }}>
-                <table style={{ width:"100%", borderCollapse:"collapse", fontSize:"0.88rem" }}>
-                  <thead>
-                    <tr>
-                      {["Category","Early Bird (before 1 Jun)","Regular","On-Spot"].map((h,i) => (
-                        <th key={h} style={{
-                          background:"#1a3a6b", color:"rgba(255,255,255,0.88)",
-                          padding:"0.85rem 1rem", textAlign:"left",
-                          fontSize:"0.7rem", fontWeight:700,
-                          letterSpacing:"0.05em", textTransform:"uppercase",
-                          borderRadius: i===0?"8px 0 0 0": i===3?"0 8px 0 0":0,
-                        }}>{h}</th>
-                      ))}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {[
-                      { cat:"Students",     early:"₹2,000", reg:"₹2,500", spot:"₹3,000" },
-                      { cat:"Professionals",early:"₹3,000", reg:"₹3,500", spot:"₹4,000" },
-                      { cat:"IAMH Members", early:"₹2,500", reg:"₹3,000", spot:"₹3,500" },
-                    ].map((r,i) => (
-                      <tr key={r.cat}>
-                        <td style={{ padding:"0.85rem 1rem", borderBottom:"1px solid rgba(20,144,200,0.12)", fontWeight:600, color:"#1a3a6b", background: i%2===0?"#fff":"#eaf5fb" }}>{r.cat}</td>
-                        <td style={{ padding:"0.85rem 1rem", borderBottom:"1px solid rgba(20,144,200,0.12)", color:"#1490c8", fontWeight:700, background: i%2===0?"#fff":"#eaf5fb" }}>{r.early}</td>
-                        <td style={{ padding:"0.85rem 1rem", borderBottom:"1px solid rgba(20,144,200,0.12)", color:"#2c4a70", background: i%2===0?"#fff":"#eaf5fb" }}>{r.reg}</td>
-                        <td style={{ padding:"0.85rem 1rem", borderBottom:"1px solid rgba(20,144,200,0.12)", color:"#2c4a70", background: i%2===0?"#fff":"#eaf5fb" }}>{r.spot}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+                <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.88rem" }}>
+  <thead>
+    <tr>
+      {["Category", "Early Bird (before 1 Jun)", "Regular", "On-Spot"].map((h, i) => (
+        <th
+          key={h}
+          style={{
+            background: "#1a3a6b",
+            color:
+              i === 1
+                ? "rgba(255,255,255,0.45)"
+                : "rgba(255,255,255,0.88)",
+            padding: "0.85rem 1rem",
+            textAlign: "left",
+            fontSize: "0.7rem",
+            fontWeight: 700,
+            letterSpacing: "0.05em",
+            textTransform: "uppercase",
+            textDecoration: i === 1 ? "line-through" : "none",
+            borderRadius:
+              i === 0
+                ? "8px 0 0 0"
+                : i === 3
+                ? "0 8px 0 0"
+                : 0,
+          }}
+        >
+          {h}
+        </th>
+      ))}
+    </tr>
+  </thead>
+
+  <tbody>
+    {[
+      { cat: "Students", early: "₹2,000", reg: "₹2,500", spot: "₹3,000" },
+      { cat: "Professionals", early: "₹3,000", reg: "₹3,500", spot: "₹4,000" },
+      { cat: "IAMH Members", early: "₹2,500", reg: "₹3,000", spot: "₹3,500" },
+    ].map((r, i) => (
+      <tr key={r.cat}>
+        <td
+          style={{
+            padding: "0.85rem 1rem",
+            borderBottom: "1px solid rgba(20,144,200,0.12)",
+            fontWeight: 600,
+            color: "#1a3a6b",
+            background: i % 2 === 0 ? "#fff" : "#eaf5fb",
+          }}
+        >
+          {r.cat}
+        </td>
+
+        <td
+          style={{
+            padding: "0.85rem 1rem",
+            borderBottom: "1px solid rgba(20,144,200,0.12)",
+            color: "#1490c8",
+            fontWeight: 700,
+            background: i % 2 === 0 ? "#fff" : "#eaf5fb",
+            textDecoration: "line-through",
+            opacity: 0.45,
+          }}
+        >
+          {r.early}
+        </td>
+
+        <td
+          style={{
+            padding: "0.85rem 1rem",
+            borderBottom: "1px solid rgba(20,144,200,0.12)",
+            color: "#2c4a70",
+            background: i % 2 === 0 ? "#fff" : "#eaf5fb",
+          }}
+        >
+          {r.reg}
+        </td>
+
+        <td
+          style={{
+            padding: "0.85rem 1rem",
+            borderBottom: "1px solid rgba(20,144,200,0.12)",
+            color: "#2c4a70",
+            background: i % 2 === 0 ? "#fff" : "#eaf5fb",
+          }}
+        >
+          {r.spot}
+        </td>
+      </tr>
+    ))}
+  </tbody>
+</table>
               </div>
 
               <p style={{ fontSize:"0.78rem", color:"#4a6585", marginTop:"0.85rem", lineHeight:1.65 }}>
