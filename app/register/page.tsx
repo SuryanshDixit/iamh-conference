@@ -124,7 +124,7 @@ export default function RegisterPage() {
                 <div style={{ fontSize:"0.68rem", fontWeight:700, letterSpacing:"0.14em", textTransform:"uppercase", color:"#7dd4f5", marginBottom:"1rem" }}>
                   Pre-Conference Workshop Fee · 10 July 2026
                 </div>
-                {[{ label:"Students", price:"₹500" },{ label:"Professionals", price:"₹1,000" }].map((r,i) => (
+                {[{ label:"Students", price:"₹500" },{ label:"Professionals", price:"₹500" }].map((r,i) => (
                   <div key={r.label} style={{ display:"flex", justifyContent:"space-between", alignItems:"center", padding:"0.65rem 0", borderBottom: i===0?"1px solid rgba(255,255,255,0.08)":"none", fontSize:"0.9rem", color:"rgba(255,255,255,0.82)" }}>
                     <span>{r.label}</span>
                     <span style={{ fontFamily:"Georgia,serif", fontSize:"1.4rem", fontWeight:600, color:"#7dd4f5" }}>{r.price}</span>
