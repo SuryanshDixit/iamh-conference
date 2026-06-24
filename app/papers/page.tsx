@@ -28,9 +28,37 @@ export default function PapersPage() {
       <PageHeader eyebrow="Call for Papers" title="Submit Your Research" subtitle="We invite abstracts from clinicians, researchers, students, and allied professionals across all areas of mental health care." />
 
       <div style={{ background:"#1490c8", padding:"1rem 2rem", textAlign:"center" }}>
-        <div style={{ marginTop:"1.5rem", background:"#fff8e1", border:"1px solid #f0c84a", borderRadius:8, padding:"0.85rem 1.1rem", fontSize:"0.85rem", fontWeight:700, color:"#7a5a00" }}>
-          ⏰ &nbsp; Deadline: 20th June, 2026
-        </div>
+        <div
+  style={{
+    marginTop: "1.5rem",
+    background: "#fff8e1",
+    border: "1px solid #f0c84a",
+    borderRadius: 8,
+    padding: "0.85rem 1.1rem",
+    fontSize: "0.85rem",
+    fontWeight: 700,
+    color: "#7a5a00",
+  }}
+>
+  ⏰ &nbsp; Deadline:{" "}
+  <span
+    style={{
+      textDecoration: "line-through",
+      color: "#9c8a45",
+      marginRight: "8px",
+    }}
+  >
+    20th June, 2026
+  </span>
+  <span
+    style={{
+      color: "#15803d",
+      fontWeight: 800,
+    }}
+  >
+    Extended till 25th June, 2026
+  </span>
+</div>
         <div style={{ marginTop:"0.75rem", background:"#eaf5fb", border:"1px solid rgba(20,144,200,0.25)", borderRadius:8, padding:"0.85rem 1.1rem", fontSize:"0.83rem", color:"#2c4a70", lineHeight:1.65 }}>
           📌 &nbsp; <strong>Note:</strong> You can submit your abstract after completing your registration. Please register first, then proceed with abstract submission.
         </div>
