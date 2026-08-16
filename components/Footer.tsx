@@ -24,7 +24,7 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h5 style={{ fontSize:"0.68rem", fontWeight:700, letterSpacing:"0.14em", textTransform:"uppercase", color:"rgba(255,255,255,0.6)", marginBottom:"1rem" }}>Quick Links</h5>
+            <h5 style={{ fontSize:"0.68rem", fontWeight:700, letterSpacing:"0.14em", textTransform:"uppercase", color:"rgba(255,255,255,1.0)", marginBottom:"1rem" }}>Quick Links</h5>
             <ul style={{ listStyle:"none", display:"flex", flexDirection:"column", gap:"0.5rem" }}>
               {quickLinks.map(l => (
                 <li key={l.href}>
@@ -34,7 +34,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h5 style={{ fontSize:"0.68rem", fontWeight:700, letterSpacing:"0.14em", textTransform:"uppercase", color:"rgba(255,255,255,0.6)", marginBottom:"1rem" }}>Contact</h5>
+            <h5 style={{ fontSize:"0.68rem", fontWeight:700, letterSpacing:"0.14em", textTransform:"uppercase", color:"rgba(255,255,255,1.0)", marginBottom:"1rem" }}>Contact</h5>
             <ul style={{ listStyle:"none", display:"flex", flexDirection:"column", gap:"0.5rem" }}>
               {[
                 { href:"mailto:iamhcon2026@gmail.com", label:"iamhcon2026@gmail.com" },
